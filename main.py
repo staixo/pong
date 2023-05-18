@@ -4,7 +4,7 @@ from paddle import Paddle
 from ball import Ball
 from score import Score
 import time
-import paddle
+
 
 sizefiled=[800,600]
 
