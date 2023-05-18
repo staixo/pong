@@ -11,8 +11,15 @@ class Paddle(Turtle):
         self.speed = speed
 
     def up(self):
-        self.sety(self.ycor() + self.speed)
+        new_y = self.ycor() + self.speed
+        if new_y < 250:  
+            self.sety(new_y)
+
     def down(self):
-        self.sety(self.ycor() - self.speed)
+        new_y = self.ycor() - self.speed
+        if new_y > -250:  
+            self.sety(new_y)
+    def getlattitude(self):
+        return self.ycor()
     def changespeed(self,speed):
         self.speed = speed
